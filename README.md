@@ -16,10 +16,10 @@ Webbplatsen innehåller:
 
 ### **Skärmdumpar**
 
-* \<a href="[https://github.com/johanmisundstrom/vandringsleder-stockholm/blob/main/screenshots/mobileindex.jpeg](https://github.com/johanmisundstrom/vandringsleder-stockholm/blob/main/screenshots/mobileindex.jpeg)"\>Startsida mobilvy\</a\>  
-* \<a href=”[https://github.com/johanmisundstrom/vandringsleder-stockholm/blob/main/screenshots/desktopindex.jpeg](https://github.com/johanmisundstrom/vandringsleder-stockholm/blob/main/screenshots/desktopindex.jpeg)”\>Startsida desktop\</a\>)  
-* \<a href=”https://github.com/johanmisundstrom/vandringsleder-stockholm/blob/main/screenshots/enklaleder.jpeg”\>Led-vy\</a\>)  
-* \<a href=”[https://github.com/johanmisundstrom/vandringsleder-stockholm/blob/main/screenshots/hovereffektenklaleder.jpeg](https://github.com/johanmisundstrom/vandringsleder-stockholm/blob/main/screenshots/hovereffektenklaleder.jpeg))\>Hovereffekt kategorikort\</a\>
+[Startsida mobilvy](https://github.com/johanmisundstrom/vandringsleder-stockholm/blob/main/screenshots/mobileindex.jpeg)
+[Startsida desktop](https://github.com/johanmisundstrom/vandringsleder-stockholm/blob/main/screenshots/desktopindex.jpeg)
+[Led-vy](https://github.com/johanmisundstrom/vandringsleder-stockholm/blob/main/screenshots/enklaleder.jpeg)
+[Hovereffekt kategorikort](https://github.com/johanmisundstrom/vandringsleder-stockholm/blob/main/screenshots/hovereffektenklaleder.jpeg)
 
 ---
 
