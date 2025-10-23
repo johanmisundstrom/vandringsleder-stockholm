@@ -1,0 +1,646 @@
+/* === GRUNDSTIL === */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    color: #333;
+    background-color: #fff;
+}
+
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+/* === HEADER OCH NAVIGATION === */
+header {
+    background-color: #2d5a27;
+    padding: 1rem 0;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.header-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    color: white;
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+}
+
+nav li {
+    margin-left: 1.5rem;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    transition: all 0.2s ease;
+    display: inline-block;
+}
+
+nav a:hover {
+    color: #a8d5a3;
+}
+
+nav a:active {
+    color: #8bc34a;
+    transform: scale(0.95);
+}
+
+nav a.active {
+  color: #0055aa;
+  text-decoration: underline;
+}
+
+
+/* === HERO-SEKTION === */
+.hero {
+    background: linear-gradient(rgba(45, 90, 39, 0.7), rgba(45, 90, 39, 0.7)), 
+                url('images/vandring.png');
+    background-size: cover;
+    background-position: center;
+    color: white;
+    text-align: center;
+    padding: 4rem 0;
+}
+
+.hero h1 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+}
+
+.hero p {
+    font-size: 1.2rem;
+    max-width: 700px;
+    margin: 0 auto;
+}
+
+/* === PAGE HERO (FÖR UNDERSIDOR) === */
+.page-hero {
+    background-color: #3a6b32;
+    color: white;
+    text-align: center;
+    padding: 2rem 0;
+}
+
+.page-hero h1 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+
+/* === KATEGORIER SEKTION === */
+.categories {
+    padding: 3rem 0;
+}
+
+.section-title {
+    text-align: center;
+    margin-bottom: 2rem;
+    color: #2d5a27;
+}
+
+.category-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 1.5rem;
+}
+
+.category-card {
+    background-color: white;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.category-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0,0,0,0.15);
+}
+
+/* BILDBEHÅLLARE OCH BILDER */
+.category-image, .trail-image {
+    height: 180px;
+    background-color: #4a7c3a;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.category-image img, .trail-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    transition: transform 0.3s ease;
+}
+
+.category-card:hover .category-image img,
+.trail-card:hover .trail-image img {
+    transform: scale(1.05);
+}
+
+.image-placeholder {
+    text-align: center;
+    font-size: 1.1rem;
+    color: white;
+    font-weight: bold;
+}
+
+.category-content, .trail-content {
+    padding: 1.5rem;
+}
+
+.category-content h3, .trail-content h3 {
+    color: #2d5a27;
+    margin-bottom: 0.5rem;
+}
+
+.category-content p, .trail-content p {
+    color: #666;
+    margin-bottom: 1rem;
+}
+
+/* KNAPPAR */
+.btn {
+    display: inline-block;
+    background-color: #2d5a27;
+    color: white;
+    padding: 0.5rem 1rem;
+    border-radius: 4px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: all 0.2s ease;
+    border: none;
+    cursor: pointer;
+}
+
+.btn:hover {
+    background-color: #3a6b32;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+}
+
+.btn:active {
+    background-color: #1e4519;
+    transform: translateY(0);
+    box-shadow: 0 2px 4px rgba(0,0,0,0.3);
+    transition: all 0.1s;
+}
+
+/* === TRAILS LIST (FÖR UNDERSIDOR) === */
+.trails-list {
+    padding: 3rem 0;
+}
+
+.trail-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+}
+
+.trail-card {
+    background-color: white;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+.trail-features {
+    list-style: none;
+    margin-top: 1rem;
+}
+
+.trail-features li {
+    padding: 0.3rem 0;
+    border-bottom: 1px solid #eee;
+}
+
+.trail-features li:before {
+    content: "✓ ";
+    color: #2d5a27;
+    font-weight: bold;
+}
+
+/* === FOOTER === */
+footer {
+    background-color: #2d5a27;
+    color: white;
+    padding: 2rem 0;
+}
+
+.footer-content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.footer-section {
+    flex: 1;
+    min-width: 200px;
+    margin-bottom: 1.5rem;
+}
+
+.footer-section h3 {
+    margin-bottom: 1rem;
+    font-size: 1.2rem;
+}
+
+.footer-section ul {
+    list-style: none;
+}
+
+.footer-section li {
+    margin-bottom: 0.5rem;
+}
+
+.footer-section a {
+    color: #a8d5a3;
+    text-decoration: none;
+}
+
+.footer-section a:hover {
+    text-decoration: underline;
+}
+
+.footer-bottom {
+    text-align: center;
+    margin-top: 2rem;
+    padding-top: 1rem;
+    border-top: 1px solid #3a6b32;
+}
+
+/* === KOLLEKTIVTRAFIK INFO === */
+.public-transport-info {
+    background-color: #f8f9fa;
+    padding: 2rem 0;
+    margin-top: 2rem;
+}
+
+.info-box {
+    background-color: white;
+    padding: 2rem;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.info-box h2 {
+    color: #2d5a27;
+    margin-bottom: 1rem;
+}
+
+.transport-tips {
+    margin-top: 1.5rem;
+    padding: 1rem;
+    background-color: #f0f7ef;
+    border-radius: 4px;
+}
+
+.transport-tips h3 {
+    color: #2d5a27;
+    margin-bottom: 0.5rem;
+}
+
+.transport-tips ul {
+    list-style: none;
+}
+
+.transport-tips li {
+    padding: 0.3rem 0;
+    border-bottom: 1px solid #ddeedb;
+}
+
+.transport-tips li:before {
+    content: "🚍 ";
+}
+
+/* === TIPS & UTRUSTNING === */
+.tips-content {
+    padding: 3rem 0;
+}
+
+.tips-grid {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.tips-section {
+    background-color: white;
+    padding: 2rem;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.tips-section.full-width {
+    grid-column: 1 / -1;
+}
+
+.tips-section h2 {
+    color: #2d5a27;
+    margin-bottom: 1.5rem;
+    padding-bottom: 0.5rem;
+    border-bottom: 2px solid #e9f0e8;
+}
+
+.tips-list, .equipment-list, .safety-tips {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.tip-item, .safety-item {
+    padding: 1rem;
+    background-color: #f8f9fa;
+    border-radius: 6px;
+    border-left: 4px solid #2d5a27;
+}
+
+.tip-item h3, .safety-item h3 {
+    color: #2d5a27;
+    margin-bottom: 0.5rem;
+}
+
+.equipment-category {
+    margin-bottom: 1.5rem;
+}
+
+.equipment-category h3 {
+    color: #2d5a27;
+    margin-bottom: 0.8rem;
+    font-size: 1.1rem;
+}
+
+.equipment-category ul {
+    list-style: none;
+    padding-left: 0;
+}
+
+.equipment-category li {
+    padding: 0.4rem 0;
+    border-bottom: 1px solid #eee;
+}
+
+.equipment-category li:before {
+    content: "🎒 ";
+    color: #2d5a27;
+    font-weight: bold;
+}
+
+/* === ACCORDION FAQ === */
+.faq-accordion {
+    max-width: 100%;
+}
+
+.faq-item {
+    margin: 0.5rem 0;
+    border: 1px solid #ddeedb;
+    border-radius: 6px;
+    overflow: hidden;
+    background: white;
+}
+
+.faq-item summary {
+    padding: 1rem 1.5rem;
+    background: #f8f9fa;
+    cursor: pointer;
+    font-weight: bold;
+    color: #2d5a27;
+    list-style: none;
+    position: relative;
+    transition: background-color 0.3s ease;
+}
+
+.faq-item summary:hover {
+    background: #e9f0e8;
+}
+
+.faq-item summary::-webkit-details-marker {
+    display: none;
+}
+
+.faq-item summary::after {
+    content: "+";
+    position: absolute;
+    right: 1.5rem;
+    font-size: 1.2rem;
+    transition: transform 0.3s ease;
+}
+
+.faq-item[open] summary::after {
+    content: "−";
+}
+
+.faq-item[open] summary {
+    background: #e9f0e8;
+    border-bottom: 1px solid #ddeedb;
+}
+
+.faq-item p {
+    padding: 1rem 1.5rem;
+    margin: 0;
+    line-height: 1.6;
+    background: white;
+}
+
+/* === RESPONSIV DESIGN === */
+@media (max-width: 768px) {
+    .header-content {
+        flex-direction: column;
+        text-align: center;
+    }
+    
+    nav ul {
+        margin-top: 1rem;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+    
+    nav li {
+        margin: 0.5rem;
+    }
+    
+    .hero h1 {
+        font-size: 2rem;
+    }
+    
+    .hero p {
+        font-size: 1rem;
+    }
+    
+    .category-grid, .trail-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .footer-content {
+        flex-direction: column;
+    }
+    
+    .tips-grid {
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 2rem;
+    }
+    
+    .safety-tips {
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 1.5rem;
+    }
+}
+
+@media (min-width: 769px) {
+    .tips-grid {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 2rem;
+    }
+    
+    .tips-section.full-width {
+        grid-column: 1 / -1;
+    }
+    
+    .safety-tips {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+        gap: 1.5rem;
+    }
+}
+
+/* Brytpunkt för mobil (max-width 600px) */
+@media (max-width: 600px) {
+  .category-grid, .trail-grid {
+    grid-template-columns: 1fr; /* stapla korten */
+  }
+  .header-content {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  nav ul {
+    flex-direction: column;
+    width: 100%;
+    display: none; /* göm menyn initialt */
+  }
+  nav li {
+    margin: 0.5rem 0;
+  }
+  nav a {
+    padding: 0.5rem 1rem;
+  }
+  nav input[type="checkbox"]:checked ~ ul {
+    display: flex; /* visa menyn när checkbox är iklickad */
+  }
+  /* Justering för hero text */
+  .hero h1 {
+    font-size: 1.8rem;
+  }
+  .hero p {
+    font-size: 1rem;
+  }
+}
+
+/* Brytpunkt för tablet/småskärmar (max-width 1024px) */
+@media (max-width: 1024px) {
+  .category-grid, .trail-grid {
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  }
+  .hero h1 {
+    font-size: 2.2rem;
+  }
+}
+
+.menu-icon {
+  display: none;
+  font-size: 2rem;
+  color: white;
+  cursor: pointer;
+}
+
+nav input[type="checkbox"] {
+  display: none;
+}
+
+/* Visa hamburgermeny på mobil */
+@media (max-width: 600px) {
+  .menu-icon {
+    display: block;
+  }
+  nav ul {
+    flex-direction: column;
+    display: none;
+  }
+  nav input[type="checkbox"]:checked ~ ul {
+    display: flex;
+  }
+}
+
+/* Snygg och tydlig fokusmarkering för alla länkar och knappar */
+a:focus, a:hover,
+button:focus, button:hover {
+  color: #0055aa; /* Mörkblå färg som kontrast */
+  outline: 3px solid #2d5a27; /* Grön, tydlig ram */
+  outline-offset: 3px;
+  box-shadow: 0 0 8px #2d5a27cc; /* Mild grön skugga runt */
+  text-decoration: underline;
+  transition: color 0.2s ease, box-shadow 0.2s ease;
+}
+
+/* Se till att länkar utan hover/fokus har normal utseende */
+a, button {
+  transition: color 0.2s ease, box-shadow 0.2s ease;
+}
+
+/* För tangentbord: gör ram och skugga extra tydlig */
+a:focus-visible, button:focus-visible {
+  outline: 3px solid #2d5a27;
+  outline-offset: 3px;
+  box-shadow: 0 0 12px #2d5a27dd;
+}
+
+.skip-link {
+  position: absolute;
+  top: -40px;
+  left: 0;
+  background: #2d5a27;
+  color: white;
+  padding: 8px 16px;
+  z-index: 100;
+  text-decoration: none;
+  font-weight: bold;
+  border-radius: 0 0 4px 4px;
+  transition: top 0.3s ease;
+  clip-path: inset(50%); /* döljer länken visuellt */
+  overflow: hidden;
+  width: 1px;
+  height: 1px;
+  white-space: nowrap;
+}
+
+.skip-link:focus,
+.skip-link:active {
+  clip-path: none; /* visar länken */
+  width: auto;
+  height: auto;
+  top: 0;
+  outline: none;
+}
+
+
