@@ -28,8 +28,9 @@ header {
 
 .header-content {
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
+    gap: 2rem;
 }
 
 .logo {
@@ -53,6 +54,10 @@ nav a {
     font-weight: bold;
     transition: all 0.2s ease;
     display: inline-block;
+    padding: 0.5rem 1.2rem;
+    background-color: #2d5a27;
+    border-radius: 6px;
+    box-shadow: 0 3px 5px rgba(0,0,0,0.2);
 }
 
 nav a:hover {
@@ -68,7 +73,6 @@ nav a.active {
   color: #0055aa;
   text-decoration: underline;
 }
-
 
 /* === HERO-SEKTION === */
 .hero {
@@ -532,7 +536,8 @@ footer {
   }
   .header-content {
     flex-direction: column;
-    align-items: flex-start;
+    align-items: center; /* Centrera allt horisontellt */
+    justify-content: center; /* Centrerar på huvudaxeln */
   }
   nav ul {
     flex-direction: column;
@@ -582,6 +587,8 @@ nav input[type="checkbox"] {
 @media (max-width: 600px) {
   .menu-icon {
     display: block;
+    margin: 0 auto;  /* centrera horisontellt */
+    text-align: center;
   }
   nav ul {
     flex-direction: column;
